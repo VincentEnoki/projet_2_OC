@@ -24,7 +24,6 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <div class="main-container">
       <nav class="nav">
@@ -36,6 +35,19 @@
             <a href="#marseille_lodgings">Hébergements</a>
           </li>
           <li class="li_activities">
+            <a href="#marseille_activities">Activités</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile_nav">
+        <a class="booki_logo_a" href="/">
+          <img src="./images/logo/Booki.png" alt="booki_logo" />
+        </a>
+        <ul class="mobile_nav_ul">
+          <li class="mobile_li_lodgings">
+            <a href="#marseille_lodgings">Hébergements</a>
+          </li>
+          <li class="mobile_li_activities">
             <a href="#marseille_activities">Activités</a>
           </li>
         </ul>
@@ -55,36 +67,52 @@
             </div>
             <input
               type="search"
-              placeholder="Marseille,France"
+              placeholder="Marseille, France"
               class="search-input"
             />
             <button class="search-button">Rechercher</button>
+          </form>
+          <form action="/" method="post" class="mobile_search_bar">
+            <div class="search-icon">
+              <i id="logo" class="fa-sharp fa-solid fa-location-dot"></i>
+            </div>
+            <input
+              type="search"
+              placeholder="Marseille, France"
+              class="search-input"
+            />
+            <button class="mobile_search-button">
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </button>
           </form>
         </header>
       </section>
       <main>
         <div class="filters">
           <ul class="filters_ul">
-            <li class="filter_text">Filtres</li>
-            <li class="filter_li">
-              <i
-                class="fa-solid fa-money-bill-1-wave"
-                style="color: #0065fc"
-              ></i>
-              Économique
-            </li>
-            <li class="filter_li">
-              <i class="fa-solid fa-person" style="color: #0065fc"></i>
-              Familial
-            </li>
-            <li class="filter_li">
-              <i class="fa-solid fa-heart" style="color: #0065fc"></i>
-              Romantique
-            </li>
-            <li class="filter_li">
-              <i class="fa-solid fa-fire" style="color: #0065fc"></i>
-              Nos pépites
-            </li>
+            <li class="filter_text_mobile">Filtres</li>
+            <div class="filters_li">
+              <li class="filter_text">Filtres</li>
+              <li class="filter_li">
+                <i
+                  class="fa-solid fa-money-bill-1-wave"
+                  style="color: #0065fc"
+                ></i>
+                Économique
+              </li>
+              <li class="filter_li">
+                <i class="fa-solid fa-person" style="color: #0065fc"></i>
+                Familial
+              </li>
+              <li class="filter_li">
+                <i class="fa-solid fa-heart" style="color: #0065fc"></i>
+                Romantique
+              </li>
+              <li class="filter_li">
+                <i class="fa-solid fa-fire" style="color: #0065fc"></i>
+                Nos pépites
+              </li>
+            </div>
           </ul>
         </div>
         <p class="information_text">
