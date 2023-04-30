@@ -14,7 +14,6 @@ html {
 
 ul {
   padding-left: 0;
-  margin-left: 50px;
 }
 
 /* NAVBAR */
@@ -168,7 +167,7 @@ h3 {
   top: 0px;
 }
 
-#logo {
+#logo_desktop, #logo_mobile {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -177,23 +176,25 @@ h3 {
   left: 18px;
   top: 15px;
 }
-
-.filters_li {
+.filters{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.filters_ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  padding-top: 10px;
   font-weight: 700;
   align-items: center;
+  padding-left: 10px;
 }
 
 .filter_text {
   font-size: 18px;
-  display: inline;
-}
-
-.filter_text_mobile {
-  display: none;
+  font-weight: 700;
+  margin-top: 30px;
 }
 
 .filter_li {
@@ -579,6 +580,7 @@ footer {
   .lodgings_populars_grid {
     display: flex;
     flex-direction: column-reverse;
+    margin-left: 20px;
   }
 
 .search_bar{
@@ -588,6 +590,7 @@ footer {
   display:flex;
   border: 1px solid #F2F2F2;
   border-radius: 15px;
+  width: 80%;
 }
 
 .mobile_search_bar > .search-icon{
@@ -609,30 +612,47 @@ width: 100vw;
 .fa-magnifying-glass{
   color: white;
 }
-ul{
-  margin-left: 5%;
-  margin-right: 5%;
+.filters{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 .filters_ul{
-  flex-direction: column;
-  padding-top: 20px;
-  padding-left: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  justify-items: center;
+  gap: 10px;
+  width: 75%;  
+  margin-left: 50px;
+
 }
 .filter_text{
-  display: none;
-}
-.filter_text_mobile{
-  display: inline;
   font-weight: 700;
   font-size: 18px;
-  align-self: flex-start;
   margin-left: 5%;
-  padding-bottom: 30px;
+  order: -1;
+  margin-bottom: 0;
 }
-.filters_ul > .filters_li{
+.filter_li{
+  text-align: center;
+  width: 85%;
+}
+.populars_grid{
+  width: 90%;
+
+}
+.populars-cards{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  column-gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.lodgings_cards_grid{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+}
+.lodgings_grid{
+  width: 90%;
+  background-color: white;
 }
 }
