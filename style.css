@@ -242,7 +242,7 @@ h3 {
   gap: 40px;
 }
 
-.lodgings_populars_grid>div {
+.lodgings_populars_grid> .lodgings_grid, .populars_grid {
   background-color: #F2F2F2;
   border-radius: 15px;
   padding: 0 25px 0 25px;
@@ -649,10 +649,58 @@ width: 100vw;
 }
 .lodgings_cards_grid{
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+ grid-template-rows: repeat(6, 1fr);
 }
-.lodgings_grid{
-  width: 90%;
+.lodgings_populars_grid> .lodgings_grid{
+  width: 93%;
   background-color: white;
+  border-radius: 0;
+  padding: 0 10px 0 10px;
 }
+.lodgings_populars_grid > .populars_grid{
+  width: 100%;
+  border-radius: 0;
+  padding: 0 0 0 20px;
+}
+.lodgings_populars_grid{
+  margin-left: 0;
+  gap: 20px;
+}
+.populars-cards>article{
+  width: 95%;
+}
+.populars-cards{
+  margin-right: 5%;
+}
+.populars_header{
+  margin-right: 7%;
+} 
+.lodgings_populars_grid > .lodgings_grid{
+  padding: 0 0 0 20px;
+}
+.activities_grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+}
+.activities_section{
+  margin-left: 0;
+  padding-left: 30px;
+}
+.activities_card{
+  width: 93%;
+  margin: 0;
+  height: 300px;
+}
+footer{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0;
+  margin-top: 40px;
+  padding: 20px 40px 30px 40px;
+  margin-bottom: -20px;
+}
+
 }
