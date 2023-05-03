@@ -374,9 +374,9 @@ h3 {
 /* ACTIVITIES */
 
 .activities_section {
-  margin-left: 80px;
+  margin-left: 50px;
   padding-top: 40px;
-  width: 95%;
+  width: 99%;
 }
 
 .activities_title {
@@ -419,8 +419,8 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--main-bg-color);
-  margin-left: 50px;
-
+  margin: 0 20px 0 100px;
+  padding-left: 30px;
 }
 
 .footer_ul {
@@ -507,13 +507,13 @@ footer {
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  html{
-    margin: 0;
-    margin-left: -10px;
-  }
-  body{
+  html, body{
     overflow-x: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
   }
+
   .main-container{
     padding: 0;
   }
@@ -572,7 +572,7 @@ footer {
     padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-right: 30px;
   }
 
@@ -593,7 +593,7 @@ footer {
 }
 
 .mobile_search_bar > .search-icon{
-  width: 40%;
+  width: 100px;
 }
 .mobile_search_bar > .search-input{
 background-color: white;
@@ -618,24 +618,27 @@ width: 100vw;
 }
 .filters_ul{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40% 40%;
+  justify-content: space-evenly;
   justify-items: center;
-  gap: 10px;
+  gap: 20px 0;
   width: 100%;  
+  padding-left: 1%;
 }
 .filter_text{
   font-weight: 700;
-  font-size: 17px;
-  margin-left: 5%;
+  font-size: 18px;
+  margin-left: 7%;
   order: -1;
   margin-bottom: 0;
 }
 .filter_li{
   text-align: center;
-  width: 85%;
-  padding: 10px 5px 10px 5px;
-  font-size: 14px;
+  width: 75%;
+  padding: 15px 15px 15px 15px;
+  font-size: 15px;
   margin-left: 0;
+  border-radius: 30px;
 }
 .information_text{
   margin-left: 15px;
@@ -651,11 +654,12 @@ width: 100vw;
  grid-template-rows: repeat(6, 1fr);
 }
 .lodgings_populars_grid> .lodgings_grid{
-  width: 93%;
+  width: 100%;
   background-color: white;
   border-radius: 0;
-  padding: 0 10px 0 10px;
+  padding: 0 0 0 20px;
 }
+
 .lodgings_populars_grid > .populars_grid{
   width: 100%;
   border-radius: 0;
@@ -669,8 +673,11 @@ width: 100vw;
   gap: 20px;
   max-width: 100%;
 }
+.lodgings_cards_grid>.card{
+  width: 90%;
+}
 .populars-cards>article{
-  width: 95%;
+  width: 93%;
 }
 .populars-cards{
   margin-right: 5%;
@@ -678,35 +685,41 @@ width: 100vw;
 .populars_header{
   margin-right: 7%;
 } 
-.lodgings_populars_grid > .lodgings_grid{
-  padding: 0 0 0 20px;
-}
 .activities_grid{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-  gap: 5px;
+  gap: 15px;
 }
 .activities_section{
   margin-left: 0;
   margin-right: 0;
-  padding-left: 10px;
-  width: 100%;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  max-width: 100%;
+  overflow-x: auto;
+  width: 97%;
 }
 .activities_card{
   width: 93%;
   margin: 0;
-  height: 300px;
+  height: 200px;
+}
+.activities_card img{
+  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.1));
+}
+.activities_card_title{
+  filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.1));
 }
 footer{
-  display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 140px 110px 120px;
   margin-left: 0;
-  margin-top: 40px;
   margin-bottom: -10px;
   margin-right: -10px;
   padding: 20px 20px 0 40px;
+  max-width: 100%;
 }
 
 }
